@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "ru.pycat.totemparticleschanger.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "client": [
+    "TotemParticleMixin"
+  ],
+  "mixins": [
+    "ParticleAccessor"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

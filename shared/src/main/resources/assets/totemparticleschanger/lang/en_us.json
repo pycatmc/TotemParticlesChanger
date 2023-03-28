@@ -1,0 +1,12 @@
+{
+  "totemparticleschanger.title": "Totem Particles Changer Settings",
+  "totemparticleschanger.option.enabled": "Enabled",
+  "totemparticleschanger.option.scale": "Particle Scale",
+  "totemparticleschanger.option.velocityMultiplier": "Particle Velocity Multiplier",
+  "totemparticleschanger.option.staticColor": "Static Color",
+  "totemparticleschanger.option.red": "Red",
+  "totemparticleschanger.option.green": "Green",
+  "totemparticleschanger.option.blue": "Blue",
+  "modmenu.descriptionTranslation.totemparticleschanger": "Allows you to change scale and velocity multiplier and color of totem pop particles.",
+  "modmenu.summaryTranslation.totemparticleschanger": "Change your totem particles!"
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "totemparticleschanger",
+  "version": "${version}",
+  "name": "totemparticleschanger",
+  "description": "Change your totem particles!",
+  "authors": [
+    "pycat"
+  ],
+  "contact": {},
+  "license": "Unlicense",
+  "icon": "assets/totemparticleschanger/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "ru.pycat.totemparticleschanger.TotemParticlesChanger"
+    ],
+    "modmenu": [
+      "ru.pycat.totemparticleschanger.config.TotemParticlesChangerModMenu"
+    ]
+  },
+  "mixins": [
+    "totemparticleschanger.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": "*",
+    "fabric": "*",
+    "minecraft": "1.18.x"
+  },
+  "recommends": {
+    "modmenu": "*"
+  }
+}
