@@ -20,16 +20,18 @@ public class TotemParticleMixin extends SimpleAnimatedParticle {
     @Inject(method = "<init>",
             at = @At(value = "RETURN"))
     private void onInit(ClientLevel clientLevel, double d, double e, double f, double g, double h, double i, SpriteSet spriteSet, CallbackInfo ci) {
-        ((ParticleAccessor) this).setVelocityMultiplier(TotemParticlesChangerConfig.velocityMultiplier);
-        this.scale(TotemParticlesChangerConfig.scale);
-        if (!TotemParticlesChangerConfig.staticColor) {
-            this.setColor(TotemParticlesChangerConfig.getRed() - this.random.nextFloat() / 200,
+        if (TotemParticlesChangerConfig.enabled) {
+            ((ParticleAccessor) this).setVelocityMultiplier(TotemParticlesChangerConfig.velocityMultiplier);
+            this.scale(TotemParticlesChangerConfig.scale);
+            if (!TotemParticlesChangerConfig.staticColor) {
+                this.setColor(TotemParticlesChangerConfig.getRed() - this.random.nextFloat() / 200,
                         TotemParticlesChangerConfig.getGreen() - this.random.nextFloat() / 200,
                         TotemParticlesChangerConfig.getBlue() - this.random.nextFloat() / 200);
-        } else {
-            this.setColor(TotemParticlesChangerConfig.getRed(),
+            } else {
+                this.setColor(TotemParticlesChangerConfig.getRed(),
                         TotemParticlesChangerConfig.getGreen(),
                         TotemParticlesChangerConfig.getBlue());
+            }
         }
     }
 
