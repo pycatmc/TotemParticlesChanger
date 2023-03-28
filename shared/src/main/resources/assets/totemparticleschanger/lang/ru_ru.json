@@ -2,7 +2,8 @@
   "totemparticleschanger.title": "Настройки Totem Particles Changer",
   "totemparticleschanger.option.enabled": "Включить",
   "totemparticleschanger.option.scale": "Размер частиц",
-  "totemparticleschanger.option.velocitymultiplier": "Множитель частиц",
+  "totemparticleschanger.option.velocityMultiplier": "Множитель скорости"
+  "totemparticleschanger.option.staticColor": "Статичный цвет",
   "totemparticleschanger.option.red": "Красный",
   "totemparticleschanger.option.green": "Зелевый",
   "totemparticleschanger.option.blue": "Синик",
