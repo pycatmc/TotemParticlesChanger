@@ -3,7 +3,7 @@
 *Changes size and color and velocity multiplier of totem particles.*   
 
 ## Download
-soon™
+[GitHub](https://github.com/pycatmc/TotemParticlesChanger/releases/latest)
 
 ## Building
 You will need:
@@ -24,7 +24,7 @@ This project is licensed under [Unlicense](https://github.com/pycatmc/TotemParti
 
 ## FAQ
 **Q**: How to download?  
-**A**: Releases will be available soon™, snapshots are available [on GitHub Actions](https://github.com/pycatmc/TotemParticlesChanger/actions) if you have a GitHub account.
+**A**: Releases are available [on GitHub Releases](https://github.com/pycatmc/TotemParticlesChanger/releases/latest), snapshots are available [on GitHub Actions](https://github.com/pycatmc/TotemParticlesChanger/actions) if you have a GitHub account.
 
 **Q**: Forge?  
 **A**: Later. (or help me by contributing)
