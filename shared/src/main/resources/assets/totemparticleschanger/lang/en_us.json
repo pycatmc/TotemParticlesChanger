@@ -4,6 +4,7 @@
   "totemparticleschanger.option.scale": "Particle Scale",
   "totemparticleschanger.option.velocityMultiplier": "Particle Velocity Multiplier",
   "totemparticleschanger.option.staticColor": "Static Color",
+  "totemparticleschanger.option.randomColor": "Random Color",
   "totemparticleschanger.option.red": "Red",
   "totemparticleschanger.option.green": "Green",
   "totemparticleschanger.option.blue": "Blue",

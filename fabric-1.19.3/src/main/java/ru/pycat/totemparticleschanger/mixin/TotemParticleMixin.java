@@ -24,15 +24,24 @@ public class TotemParticleMixin extends SimpleAnimatedParticle {
         if (TotemParticlesChangerConfig.enabled) {
             ((ParticleAccessor) this).setVelocityMultiplier(TotemParticlesChangerConfig.velocityMultiplier);
             this.scale(TotemParticlesChangerConfig.scale);
-            if (!TotemParticlesChangerConfig.staticColor) {
-                this.setColor(TotemParticlesChangerConfig.getRed() - this.random.nextFloat() / 200,
-                        TotemParticlesChangerConfig.getGreen() - this.random.nextFloat() / 200,
-                        TotemParticlesChangerConfig.getBlue() - this.random.nextFloat() / 200);
+
+            float red, green, blue;
+
+            if (TotemParticlesChangerConfig.randomColor) {
+                red = this.random.nextFloat();
+                green = this.random.nextFloat();
+                blue = this.random.nextFloat();
+            } else if (TotemParticlesChangerConfig.staticColor) {
+                red = TotemParticlesChangerConfig.getRed();
+                green = TotemParticlesChangerConfig.getGreen();
+                blue = TotemParticlesChangerConfig.getBlue();
             } else {
-                this.setColor(TotemParticlesChangerConfig.getRed(),
-                        TotemParticlesChangerConfig.getGreen(),
-                        TotemParticlesChangerConfig.getBlue());
+                red = TotemParticlesChangerConfig.getRed() - this.random.nextFloat() / 200;
+                green = TotemParticlesChangerConfig.getGreen() - this.random.nextFloat() / 200;
+                blue = TotemParticlesChangerConfig.getBlue() - this.random.nextFloat() / 200;
             }
+
+            setColor(red, green, blue);
         }
     }
 

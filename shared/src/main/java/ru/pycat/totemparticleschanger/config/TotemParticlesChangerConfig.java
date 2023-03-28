@@ -17,6 +17,7 @@ public class TotemParticlesChangerConfig {
     public static float scale = 1F;
     public static float velocityMultiplier = 0.7F;
     public static boolean staticColor = false;
+    public static boolean randomColor = false;
     public static int red = 172;
     public static int green = 248;
     public static int blue = 252;
@@ -30,6 +31,7 @@ public class TotemParticlesChangerConfig {
             scale = json.get("scale").getAsFloat();
             velocityMultiplier = json.get("velocityMultiplier").getAsFloat();
             staticColor = json.get("colorStatic").getAsBoolean();
+            randomColor = json.get("randomColor").getAsBoolean();
             red = json.get("red").getAsInt();
             green = json.get("green").getAsInt();
             blue = json.get("blue").getAsInt();
@@ -48,6 +50,7 @@ public class TotemParticlesChangerConfig {
             json.addProperty("scale", scale);
             json.addProperty("velocityMultiplier", velocityMultiplier);
             json.addProperty("colorStatic", staticColor);
+            json.addProperty("randomColor", randomColor);
             json.addProperty("red", red);
             json.addProperty("green", green);
             json.addProperty("blue", blue);
