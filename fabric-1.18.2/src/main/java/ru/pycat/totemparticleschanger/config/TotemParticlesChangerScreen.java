@@ -15,6 +15,7 @@ import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.TranslatableComponent;
 import org.lwjgl.glfw.GLFW;
 
+import java.awt.*;
 import java.text.DecimalFormat;
 import java.util.function.DoubleConsumer;
 import java.util.function.DoubleFunction;
@@ -78,6 +79,17 @@ public class TotemParticlesChangerScreen extends Screen {
         renderBackground(stack);
         super.render(stack, mouseX, mouseY, delta);
         drawCenteredString(stack, font, title, width / 2, 10, -1);
+
+        if (!randomColor.selected()) {
+            red.visible = true;
+            green.visible = true;
+            blue.visible = true;
+            fill(stack, (int) (width / 2 - 110), 208, (width / 2 - 90), 208 + 20, new Color(TotemParticlesChangerConfig.red, TotemParticlesChangerConfig.green, TotemParticlesChangerConfig.blue).getRGB());
+        } else {
+            red.visible = false;
+            green.visible = false;
+            blue.visible = false;
+        }
     }
 
     @Override
