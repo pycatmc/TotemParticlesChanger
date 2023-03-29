@@ -32,6 +32,7 @@ public class TotemParticlesChangerConfig {
             Path pathConfig = directory.resolve("TotemParticlesChanger.json");
             Files.createDirectories(directory);
             JsonObject jsonConfig = new JsonObject();
+            jsonConfig.addProperty("enabled", enabled);
             jsonConfig.addProperty("profile", TotemParticlesChangerConfig.profile);
             Files.write(pathConfig, GSON.toJson(jsonConfig).getBytes(StandardCharsets.UTF_8));
 
@@ -46,12 +47,12 @@ public class TotemParticlesChangerConfig {
             Path pathConfig = directory.resolve("TotemParticlesChanger.json");
             if (!Files.isRegularFile(pathConfig)) return;
             JsonObject jsonConfig = GSON.fromJson(new String(Files.readAllBytes(pathConfig), StandardCharsets.UTF_8), JsonObject.class);
+            enabled = jsonConfig.get("enabled").getAsBoolean();
             profile = jsonConfig.get("profile").getAsInt();
 
             Path pathProfile = directory.resolve("TotemParticlesChanger-Profile"+profile+".json");
             if (!Files.isRegularFile(pathProfile)) return;
             JsonObject jsonProfile = GSON.fromJson(new String(Files.readAllBytes(pathProfile), StandardCharsets.UTF_8), JsonObject.class);
-            enabled = jsonProfile.get("enabled").getAsBoolean();
             scale = jsonProfile.get("scale").getAsFloat();
             velocityMultiplier = jsonProfile.get("velocityMultiplier").getAsFloat();
             staticColor = jsonProfile.get("colorStatic").getAsBoolean();
@@ -71,13 +72,13 @@ public class TotemParticlesChangerConfig {
             Path pathConfig = directory.resolve("TotemParticlesChanger.json");
             Files.createDirectories(directory);
             JsonObject jsonConfig = new JsonObject();
+            jsonConfig.addProperty("enabled", enabled);
             jsonConfig.addProperty("profile", profile);
             Files.write(pathConfig, GSON.toJson(jsonConfig).getBytes(StandardCharsets.UTF_8));
 
             Path pathProfile = directory.resolve("TotemParticlesChanger-Profile"+profile+".json");
             Files.createDirectories(directory);
             JsonObject jsonProfile = new JsonObject();
-            jsonProfile.addProperty("enabled", enabled);
             jsonProfile.addProperty("scale", scale);
             jsonProfile.addProperty("velocityMultiplier", velocityMultiplier);
             jsonProfile.addProperty("colorStatic", staticColor);
