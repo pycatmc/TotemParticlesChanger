@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "totemparticleschanger",
+  "id": "totem-particles-changer",
   "version": "${version}",
   "name": "Totem Particles Changer",
   "description": "Change your totem particles!",

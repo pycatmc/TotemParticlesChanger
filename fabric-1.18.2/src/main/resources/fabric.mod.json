@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "id": "totemparticleschanger",
+  "id": "totem-particles-changer",
   "version": "${version}",
-  "name": "totemparticleschanger",
+  "name": "Totem Particles Changer",
   "description": "Change your totem particles!",
   "authors": [
     "pycat"
