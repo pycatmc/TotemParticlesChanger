@@ -1,8 +1,9 @@
 {
   "totemparticleschanger.title": "Totem Particles Changer Settings",
   "totemparticleschanger.option.enabled": "Enabled",
-  "totemparticleschanger.option.scale": "Particle Scale",
-  "totemparticleschanger.option.velocityMultiplier": "Particle Velocity Multiplier",
+  "totemparticleschanger.option.profile": "Profile",
+  "totemparticleschanger.option.scale": "Scale",
+  "totemparticleschanger.option.velocityMultiplier": "Velocity Multiplier",
   "totemparticleschanger.option.staticColor": "Static Color",
   "totemparticleschanger.option.randomColor": "Random Color",
   "totemparticleschanger.option.red": "Red",

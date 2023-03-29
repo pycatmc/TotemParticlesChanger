@@ -1,13 +1,14 @@
 {
   "totemparticleschanger.title": "Настройки Totem Particles Changer",
   "totemparticleschanger.option.enabled": "Включить",
-  "totemparticleschanger.option.scale": "Размер частиц",
+  "totemparticleschanger.option.profile": "Профиль",
+  "totemparticleschanger.option.scale": "Размер",
   "totemparticleschanger.option.velocityMultiplier": "Множитель скорости",
   "totemparticleschanger.option.staticColor": "Статичный цвет",
   "totemparticleschanger.option.randomColor": "Случайный цвет",
   "totemparticleschanger.option.red": "Красный",
-  "totemparticleschanger.option.green": "Зелевый",
-  "totemparticleschanger.option.blue": "Синик",
+  "totemparticleschanger.option.green": "Зеленый",
+  "totemparticleschanger.option.blue": "Синий",
   "modmenu.descriptionTranslation.totemparticleschanger": "Позволяет менять размер, цвет и множитель частиц тотема.",
   "modmenu.summaryTranslation.totemparticleschanger": "Измените свои частиц тотема!"
 }
