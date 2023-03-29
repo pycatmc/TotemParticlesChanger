@@ -2,6 +2,8 @@
 
 *Changes size and color and velocity multiplier of totem particles.*   
 
+![Totem Particles Changer's settings](.github/images/settigs.png)
+
 ## Download
 [GitHub](https://github.com/pycatmc/TotemParticlesChanger/releases/latest)
 
