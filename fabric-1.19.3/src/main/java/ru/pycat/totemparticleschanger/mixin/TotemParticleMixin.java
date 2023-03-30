@@ -24,6 +24,8 @@ public class TotemParticleMixin extends SimpleAnimatedParticle {
         if (TotemParticlesChangerConfig.enabled) {
             ((ParticleAccessor) this).setVelocityMultiplier(TotemParticlesChangerConfig.velocityMultiplier);
             this.scale(TotemParticlesChangerConfig.scale);
+            this.setLifetime(TotemParticlesChangerConfig.lifetime);
+            this.gravity = TotemParticlesChangerConfig.gravity;
 
             float red, green, blue;
 
@@ -31,14 +33,10 @@ public class TotemParticleMixin extends SimpleAnimatedParticle {
                 red = this.random.nextFloat();
                 green = this.random.nextFloat();
                 blue = this.random.nextFloat();
-            } else if (TotemParticlesChangerConfig.staticColor) {
+            } else {
                 red = TotemParticlesChangerConfig.getRed();
                 green = TotemParticlesChangerConfig.getGreen();
                 blue = TotemParticlesChangerConfig.getBlue();
-            } else {
-                red = TotemParticlesChangerConfig.getRed() - this.random.nextFloat() / 200;
-                green = TotemParticlesChangerConfig.getGreen() - this.random.nextFloat() / 200;
-                blue = TotemParticlesChangerConfig.getBlue() - this.random.nextFloat() / 200;
             }
 
             setColor(red, green, blue);

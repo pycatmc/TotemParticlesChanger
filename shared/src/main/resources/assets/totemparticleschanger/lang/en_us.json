@@ -4,11 +4,12 @@
   "totemparticleschanger.option.profile": "Profile",
   "totemparticleschanger.option.scale": "Scale",
   "totemparticleschanger.option.velocityMultiplier": "Velocity Multiplier",
-  "totemparticleschanger.option.staticColor": "Static Color",
+  "totemparticleschanger.option.gravity": "Gravity",
+  "totemparticleschanger.option.lifetime": "Lifetime",
   "totemparticleschanger.option.randomColor": "Random Color",
   "totemparticleschanger.option.red": "Red",
   "totemparticleschanger.option.green": "Green",
   "totemparticleschanger.option.blue": "Blue",
-  "modmenu.descriptionTranslation.totemparticleschanger": "Allows you to change scale and velocity multiplier and color of totem pop particles.",
-  "modmenu.summaryTranslation.totemparticleschanger": "Change your totem particles!"
+  "modmenu.descriptionTranslation.totem-particles-changer": "Allows you to change scale and velocity multiplier and color of totem pop particles.",
+  "modmenu.summaryTranslation.totem-particles-changer": "Change your totem particles!"
 }

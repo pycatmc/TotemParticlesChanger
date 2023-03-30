@@ -28,6 +28,9 @@ This project is licensed under [Unlicense](https://github.com/pycatmc/TotemParti
 **Q**: How to download?  
 **A**: Releases are available [on GitHub Releases](https://github.com/pycatmc/TotemParticlesChanger/releases/latest), snapshots are available [on GitHub Actions](https://github.com/pycatmc/TotemParticlesChanger/actions) if you have a GitHub account.
 
+**Q**: How do i go down a profile?
+**A**: RMB.
+
 **Q**: Forge?  
 **A**: Later. (or help me by contributing)
 
