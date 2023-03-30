@@ -1,6 +1,6 @@
 # TotemParticlesChanger
 
-*Changes size and color and velocity multiplier of totem particles.*   
+*Changes size, velocity multiplier, gravity, lifetime and color of totem particles.*   
 
 ![Totem Particles Changer's settings](.github/images/settings.png)
 
