@@ -8,10 +8,12 @@ import org.apache.logging.log4j.Logger;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.Random;
 
 public class TotemParticlesChangerConfig {
     private static final Logger LOG = LogManager.getLogger("TotemParticlesChanger");
     private static final Gson GSON = new Gson();
+    private static final Random random = new Random();
 
     public static boolean enabled = true;
     public static int profile = 1;
@@ -101,15 +103,24 @@ public class TotemParticlesChangerConfig {
     }
 
     public static float getRed() {
-        return 0.003921568627451F * red;
+        float tempRed = red;
+        if (tempRed > 15)
+            tempRed -= random.nextInt(15);
+        return 0.003921568627451F * tempRed;
     }
 
     public static float getGreen() {
-        return 0.003921568627451F * green;
+        float tempGreen = green;
+        if (tempGreen > 15)
+            tempGreen -= random.nextInt(15);
+        return 0.003921568627451F * tempGreen;
     }
 
     public static float getBlue() {
-        return 0.003921568627451F * blue;
+        float tempBlue = blue;
+        if (tempBlue > 15)
+            tempBlue -= random.nextInt(15);
+        return 0.003921568627451F * tempBlue;
     }
 
 }
