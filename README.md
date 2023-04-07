@@ -1,1 +1,1 @@
-# Migrated to [TotemChanger](https://github.com/FemboyPvE/TotemChanger
+# Migrated to [TotemChanger](https://github.com/FemboyPvE/TotemChanger)
